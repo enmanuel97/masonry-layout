@@ -1,27 +1,19 @@
 #container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  @media (max-width: 779px) and (min-width: 0px) {
+    column-count: 2;
+  }
+ 
+  @media (max-width: 1039px) and (min-width: 780px) {
+    column-count: 3;
+  }
+ 
+  @media (max-width: 1299px) and (min-width: 1040px) {
+    column-count: 4;
+  }
+ 
+  @media (min-width: 1300px) {
+    column-count: 5;
+  }
+ 
+  column-gap: 0px;
 }
